@@ -10,8 +10,11 @@ Personal portfolio project. Static site, free hosting.
 - @react-three/fiber and @react-three/drei (OrbitControls, Html, etc.)
 - zustand for app state (selected part, visible systems, view, lever/crank input, x-ray)
 - No backend, no database
-- Deployed to GitHub Pages via GitHub Actions
-  (Vite `base` must be `/classic-bike-3d/`)
+- Deployed to Vercel (Hobby plan), connected to the GitHub repo:
+  every push to `main` deploys production, other branches get preview URLs
+- Vite `base` stays `/` (site is served from the domain root)
+- Build command `npm run build`, output directory `dist`
+- Load assets with root-relative paths (`/models/...`, `/data/...`)
 
 ## Folder layout
 ```
