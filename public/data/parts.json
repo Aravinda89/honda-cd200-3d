@@ -1,0 +1,279 @@
+{
+  "brake_front_lever": {
+    "name": "Front brake lever",
+    "system": "brakes",
+    "layer": "exterior",
+    "partNumber": "",
+    "material": "Polished aluminium alloy",
+    "description": "Right-hand handlebar lever. Squeezing it pulls the inner brake cable, which turns the cam arm at the front hub.",
+    "specs": {
+      "freePlayAtTipMm": null
+    },
+    "faults": [
+      "Too much free play: cable stretched or shoes worn, adjust or inspect",
+      "Lever stiff or slow to return: dry or frayed cable, dry pivot bolt"
+    ],
+    "connectedTo": [
+      "brake_front_lever_bracket",
+      "brake_front_cable"
+    ]
+  },
+  "brake_front_lever_bracket": {
+    "name": "Front brake lever bracket",
+    "system": "brakes",
+    "layer": "exterior",
+    "partNumber": "",
+    "material": "Aluminium alloy",
+    "description": "Clamps to the handlebar and holds the lever pivot, the cable end and the cable adjuster.",
+    "specs": {},
+    "faults": [
+      "Loose clamp lets the lever rotate on the bar"
+    ],
+    "connectedTo": [
+      "brake_front_lever",
+      "brake_front_cable"
+    ]
+  },
+  "brake_front_cable": {
+    "name": "Front brake cable",
+    "system": "brakes",
+    "layer": "exterior",
+    "partNumber": "",
+    "material": "Steel inner wire, plastic-lined outer casing",
+    "description": "Transfers the pull from the lever down to the cam arm. The adjuster at the hub end sets lever free play.",
+    "specs": {},
+    "faults": [
+      "Frayed strands: replace immediately",
+      "Sticky or rough action: lubricate or replace",
+      "Stretched: free play keeps increasing"
+    ],
+    "connectedTo": [
+      "brake_front_lever",
+      "brake_front_cam_arm"
+    ]
+  },
+  "brake_front_cam_arm": {
+    "name": "Front brake cam arm",
+    "system": "brakes",
+    "layer": "exterior",
+    "partNumber": "",
+    "material": "Steel",
+    "description": "Lever on the outside of the backing plate, splined to the cam. The cable pulls it, rotating the cam inside the drum.",
+    "specs": {},
+    "faults": [
+      "Arm angle past 90 degrees to the cable at full pull means worn shoes and lost leverage"
+    ],
+    "connectedTo": [
+      "brake_front_cable",
+      "brake_front_cam",
+      "brake_front_wear_indicator"
+    ]
+  },
+  "brake_front_cam": {
+    "name": "Front brake cam",
+    "system": "brakes",
+    "layer": "internal",
+    "partNumber": "",
+    "material": "Steel",
+    "description": "Flat-sided shaft through the backing plate. When it turns, its edges push the shoe ends apart so the linings press on the drum.",
+    "specs": {},
+    "faults": [
+      "Dry or corroded cam sticks, so the brake drags or releases slowly"
+    ],
+    "connectedTo": [
+      "brake_front_cam_arm",
+      "brake_front_backing_plate",
+      "brake_front_shoe_leading",
+      "brake_front_shoe_trailing"
+    ]
+  },
+  "brake_front_shoe_leading": {
+    "name": "Front brake shoe (leading)",
+    "system": "brakes",
+    "layer": "internal",
+    "partNumber": "",
+    "material": "Alloy shoe with bonded friction lining",
+    "description": "The shoe whose cam end meets the drum surface first as the wheel turns. Drum rotation drags it harder into contact, so it does most of the braking.",
+    "specs": {
+      "liningThicknessMm": null,
+      "serviceLimitMm": null
+    },
+    "faults": [
+      "Worn lining: weak braking, long lever travel",
+      "Oil or grease on lining: poor braking, replace shoes",
+      "Glazed lining: poor bite, often after overheating"
+    ],
+    "connectedTo": [
+      "brake_front_cam",
+      "brake_front_anchor_pin",
+      "brake_front_return_spring",
+      "brake_front_drum"
+    ]
+  },
+  "brake_front_shoe_trailing": {
+    "name": "Front brake shoe (trailing)",
+    "system": "brakes",
+    "layer": "internal",
+    "partNumber": "",
+    "material": "Alloy shoe with bonded friction lining",
+    "description": "The second shoe. Drum rotation pushes it away from the surface, so it brakes less than the leading shoe. This is why the design is called single leading shoe (SLS).",
+    "specs": {
+      "liningThicknessMm": null,
+      "serviceLimitMm": null
+    },
+    "faults": [
+      "Worn or contaminated lining, as for the leading shoe"
+    ],
+    "connectedTo": [
+      "brake_front_cam",
+      "brake_front_anchor_pin",
+      "brake_front_return_spring",
+      "brake_front_drum"
+    ]
+  },
+  "brake_front_return_spring": {
+    "name": "Front brake shoe return springs",
+    "system": "brakes",
+    "layer": "internal",
+    "partNumber": "",
+    "material": "Spring steel",
+    "description": "Pair of springs that pull the shoes back together and away from the drum when the lever is released.",
+    "specs": {},
+    "faults": [
+      "Weak or stretched springs: brake drags, hub gets hot"
+    ],
+    "connectedTo": [
+      "brake_front_shoe_leading",
+      "brake_front_shoe_trailing"
+    ]
+  },
+  "brake_front_anchor_pin": {
+    "name": "Front brake anchor pin",
+    "system": "brakes",
+    "layer": "internal",
+    "partNumber": "",
+    "material": "Steel",
+    "description": "Fixed pin on the backing plate opposite the cam. The shoes pivot on it, and it carries the braking force into the backing plate.",
+    "specs": {},
+    "faults": [
+      "Worn pin lets the shoes shift, causing uneven wear"
+    ],
+    "connectedTo": [
+      "brake_front_backing_plate",
+      "brake_front_shoe_leading",
+      "brake_front_shoe_trailing"
+    ]
+  },
+  "brake_front_backing_plate": {
+    "name": "Front brake backing plate",
+    "system": "brakes",
+    "layer": "exterior",
+    "partNumber": "",
+    "material": "Aluminium alloy",
+    "description": "Cover on one side of the hub that holds the cam, anchor pin and shoes. A slot or stop on the fork leg stops it rotating with the wheel.",
+    "specs": {},
+    "faults": [
+      "Damaged anchoring slot or stop: plate can shift under braking"
+    ],
+    "connectedTo": [
+      "brake_front_cam",
+      "brake_front_anchor_pin",
+      "brake_front_cam_arm",
+      "brake_front_drum"
+    ]
+  },
+  "brake_front_drum": {
+    "name": "Front hub and brake drum",
+    "system": "brakes",
+    "layer": "exterior",
+    "partNumber": "",
+    "material": "Cast iron liner in alloy hub",
+    "description": "The hub turns with the wheel. Its inner surface is the drum that the shoes press against.",
+    "specs": {
+      "innerDiameterMm": 140,
+      "serviceLimitMm": null
+    },
+    "faults": [
+      "Scored surface: grinding noise, fast shoe wear",
+      "Out of round: pulsing lever or judder when braking"
+    ],
+    "connectedTo": [
+      "wheel_front_spokes",
+      "brake_front_shoe_leading",
+      "brake_front_shoe_trailing",
+      "brake_front_backing_plate"
+    ]
+  },
+  "brake_front_wear_indicator": {
+    "name": "Front brake wear indicator (if fitted)",
+    "system": "brakes",
+    "layer": "exterior",
+    "partNumber": "",
+    "material": "Steel pointer, cast scale",
+    "description": "Pointer on the cam and a scale mark on the backing plate. When the pointer reaches the limit mark with the brake applied, the shoes need replacing.",
+    "specs": {},
+    "faults": [],
+    "connectedTo": [
+      "brake_front_cam_arm",
+      "brake_front_backing_plate"
+    ]
+  },
+  "wheel_front_tyre": {
+    "name": "Front tyre",
+    "system": "wheels",
+    "layer": "exterior",
+    "partNumber": "",
+    "material": "Rubber",
+    "description": "3.00 x 17 tyre. Its grip on the road is what finally turns braking force into slowing down.",
+    "specs": {
+      "size": "3.00-17",
+      "overallDiameterMm": null,
+      "pressureKpa": null
+    },
+    "faults": [
+      "Low pressure or worn tread reduces braking grip",
+      "Cracked sidewalls on an old tyre: replace"
+    ],
+    "connectedTo": [
+      "wheel_front_rim"
+    ]
+  },
+  "wheel_front_rim": {
+    "name": "Front rim",
+    "system": "wheels",
+    "layer": "exterior",
+    "partNumber": "",
+    "material": "Chrome-plated steel",
+    "description": "17-inch spoked rim that holds the tyre and is laced to the hub.",
+    "specs": {
+      "diameterInch": 17,
+      "widthMm": null,
+      "runoutLimitMm": null
+    },
+    "faults": [
+      "Dents or runout cause wobble, worst under braking"
+    ],
+    "connectedTo": [
+      "wheel_front_tyre",
+      "wheel_front_spokes"
+    ]
+  },
+  "wheel_front_spokes": {
+    "name": "Front spokes",
+    "system": "wheels",
+    "layer": "exterior",
+    "partNumber": "",
+    "material": "Steel wire",
+    "description": "Wire spokes carry load between rim and hub, including the braking torque from the drum.",
+    "specs": {
+      "count": null
+    },
+    "faults": [
+      "Loose spokes: dull sound when tapped, wheel goes out of true"
+    ],
+    "connectedTo": [
+      "wheel_front_rim",
+      "brake_front_drum"
+    ]
+  }
+}
